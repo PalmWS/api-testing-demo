@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+REST_API_TEST_SUITE,,,,2566-11-07 10:40:10,2566-11-07 10:40:16,6.043s,PASSED
+,,,,,,,
+Test Cases/REST_API_TEST1,,,,2566-11-07 10:40:10,2566-11-07 10:40:16,5.727s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/GetUserList""))",,,,2566-11-07 10:40:10,2566-11-07 10:40:13,3.004s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/CreateUser""))",,,,2566-11-07 10:40:13,2566-11-07 10:40:14,0.798s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/UpdateUser""))",,,,2566-11-07 10:40:14,2566-11-07 10:40:15,0.798s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/DeleteUser""))",,,,2566-11-07 10:40:15,2566-11-07 10:40:16,0.753s,PASSED
