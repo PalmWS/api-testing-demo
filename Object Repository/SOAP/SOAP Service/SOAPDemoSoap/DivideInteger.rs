@@ -37,7 +37,7 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;tem:DivideInteger>
-         &lt;tem:Arg1>10&lt;/tem:Arg1>
+         &lt;tem:Arg1>${num1}&lt;/tem:Arg1>
          &lt;tem:Arg2>10&lt;/tem:Arg2>
       &lt;/tem:DivideInteger>
    &lt;/soapenv:Body>
@@ -48,6 +48,13 @@
    <soapServiceFunction>DivideInteger</soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.FIRST_NUM</defaultValue>
+      <description></description>
+      <id>22f22846-4f7b-4d8f-9d39-c9eeb03fe558</id>
+      <masked>false</masked>
+      <name>num1</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -63,8 +70,6 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 
-WS.verifyResponseStatusCode(response, 200)
-
-assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
+WS.verifyElementText(response, 'DivideIntegerResponse.DivideIntegerResult', '2')</verificationScript>
    <wsdlAddress>https://www.crcind.com/csp/samples/SOAP.Demo.CLS?WSDL=1</wsdlAddress>
 </WebServiceRequestEntity>

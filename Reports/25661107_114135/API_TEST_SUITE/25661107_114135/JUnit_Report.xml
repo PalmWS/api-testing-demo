@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="API_TEST_SUITE" time="9.767" tests="3" failures="0" errors="0">
+   <testsuite name="API_TEST_SUITE" tests="3" failures="0" errors="0" time="9.767" skipped="0" timestamp="2566-11-07 11:41:46" hostname="Wisanu - GA006556-Wisanu" id="Test Suites/API_TEST_SUITE">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Admin\\git\\api-testing-demo\\Reports\\25661107_114135\\API_TEST_SUITE\\25661107_114135"/>
+         <property name="logFiles" value="C:\\Users\\Admin\\git\\api-testing-demo\\Reports\\25661107_114135\\API_TEST_SUITE\\25661107_114135\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Wisanu - GA006556-Wisanu"/>
+         <property name="hostAddress" value="192.168.1.5"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.6.208"/>
+      </properties>
+      <testcase name="Test Cases/REST_API_TEST1" time="5.82" classname="Test Cases/REST_API_TEST1" status="PASSED">
+         <system-out><![CDATA[2566-11-07 11:41:46 - [TEST_CASE][PASSED] - Test Cases/REST_API_TEST1: Test Cases/REST_API_TEST1
+
+2566-11-07 11:41:46 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/REST/GetUserList")): Send request and verify the response successfully
+
+2566-11-07 11:41:49 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\0.har
+
+2566-11-07 11:41:49 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-07 11:41:49 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-07 11:41:49 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-07 11:41:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-07 11:41:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:49 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-07 11:41:49 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[4].first_name", "George"): Verify element property value successfully
+
+2566-11-07 11:41:49 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2566-11-07 11:41:49 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-07 11:41:49 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-07 11:41:49 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-07 11:41:49 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/REST/CreateUser")): Send request and verify the response successfully
+
+2566-11-07 11:41:50 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\1.har
+
+2566-11-07 11:41:50 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-07 11:41:50 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-07 11:41:50 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-07 11:41:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2566-11-07 11:41:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:50 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(201): null
+
+2566-11-07 11:41:50 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-07 11:41:50 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-07 11:41:50 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-07 11:41:50 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/REST/UpdateUser")): Send request and verify the response successfully
+
+2566-11-07 11:41:51 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\2.har
+
+2566-11-07 11:41:51 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-07 11:41:51 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-07 11:41:51 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-07 11:41:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-07 11:41:51 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:51 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-07 11:41:51 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-07 11:41:51 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-07 11:41:51 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-07 11:41:51 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/REST/DeleteUser")): Send request and verify the response successfully
+
+2566-11-07 11:41:51 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\3.har
+
+2566-11-07 11:41:52 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-07 11:41:52 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-07 11:41:52 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-07 11:41:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 204): Verify response status code successfully
+
+2566-11-07 11:41:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:52 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(204): null
+
+2566-11-07 11:41:52 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-07 11:41:52 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-07 11:41:52 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SOAP_API_TEST1" time="2.729" classname="Test Cases/SOAP_API_TEST1" status="PASSED">
+         <system-out><![CDATA[2566-11-07 11:41:52 - [TEST_CASE][PASSED] - Test Cases/SOAP_API_TEST1: Test Cases/SOAP_API_TEST1
+
+2566-11-07 11:41:52 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("SOAP/AddInteger")): Send request and verify the response successfully
+
+2566-11-07 11:41:53 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\4.har
+
+2566-11-07 11:41:53 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-07 11:41:53 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-07 11:41:53 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-07 11:41:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-07 11:41:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:53 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-07 11:41:53 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-07 11:41:53 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-07 11:41:53 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-07 11:41:53 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("SOAP/SOAP Service/SOAPDemoSoap/DivideInteger")): Send request and verify the response successfully
+
+2566-11-07 11:41:54 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\5.har
+
+2566-11-07 11:41:54 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-07 11:41:54 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-07 11:41:54 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-07 11:41:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-07 11:41:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:54 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-07 11:41:54 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-07 11:41:54 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-07 11:41:54 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/APIVerification" time="0.896" classname="Test Cases/APIVerification" status="PASSED">
+         <system-out><![CDATA[2566-11-07 11:41:54 - [TEST_CASE][PASSED] - Test Cases/APIVerification: Test Cases/APIVerification
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - sendRequest(findTestObject("API/REST/GetUserList")): Send request successfully
+
+2566-11-07 11:41:55 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\6.har
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Send request successfully
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("API/REST/GetUserList")): Send request and verify the response successfully
+
+2566-11-07 11:41:55 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661107_114135\API_TEST_SUITE\25661107_114135\requests\main\7.har
+
+2566-11-07 11:41:55 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[4].first_name", "George"): Verify element property value successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[4].first_name", "George"): Verify element property value successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - verifyElementsCount(response, "data", 6): Verify element count successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Verify element count successfully
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-07 11:41:55 - [TEST_STEP][PASSED] - verifyResponseStatusCodeInRange(response, 200, 204): Verify response status code successfully
+
+2566-11-07 11:41:55 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2566-11-07 11:41:46 - [TEST_SUITE][PASSED] - API_TEST_SUITE: Test Cases/APIVerification]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

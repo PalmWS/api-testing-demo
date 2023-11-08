@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>API_TEST_SUITE</name>
+   <name>JSON-XML-TEST</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,33 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>9ba981bf-6d37-4204-b57f-7c37919fa2fc</testSuiteGuid>
+   <testSuiteGuid>49b9bdae-1e1e-4096-b804-6259af9454e7</testSuiteGuid>
    <testCaseLink>
-      <guid>e89ce8f5-f00e-4a29-8285-a5e30f279a25</guid>
+      <guid>a7f5a280-6704-4190-acf4-d79e1b236f9f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/REST_API_TEST1</testCaseId>
+      <testCaseId>Test Cases/ReqResChaining_JSON</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1b9850f1-57ac-4b19-a8d9-720ad9f3f97a</guid>
+      <guid>48d5831c-bd58-4bb8-a191-52750089eaa4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SOAP_API_TEST1</testCaseId>
+      <testCaseId>Test Cases/ReqResChaining_JSON_Groovy</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d1090387-e70f-41fd-8fe8-8be322c697af</guid>
+      <guid>befa4128-adc2-4312-9651-89951499f828</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/APIVerification</testCaseId>
+      <testCaseId>Test Cases/ReqResChaining_XML</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99b86512-7b04-46a8-b13b-90f0c722912a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ReqResChaining_XML_Groovy</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -27,6 +27,8 @@
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import java.nio.file.WatchService
+
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -43,6 +45,10 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
-WS.verifyElementPropertyValue(response, 'data[4].first_name', &quot;George&quot;)</verificationScript>
+WS.verifyElementPropertyValue(response, 'data[4].first_name', &quot;George&quot;)
+
+GlobalVariable.FIRST_NAME = WS.getElementPropertyValue(response, 'data[4].first_name')
+
+println 'Global Variable First_Name is : ' + GlobalVariable.FIRST_NAME</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+API_TEST_SUITE,,,,2566-11-08 15:54:07,2566-11-08 15:54:17,9.986s,FAILED
+,,,,,,,
+Test Cases/REST_API_TEST1,,,,2566-11-08 15:54:07,2566-11-08 15:54:13,5.862s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/GetUserList""))",,,,2566-11-08 15:54:07,2566-11-08 15:54:10,3.189s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/CreateUser""))",,,,2566-11-08 15:54:10,2566-11-08 15:54:11,0.698s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/UpdateUser""))",,,,2566-11-08 15:54:11,2566-11-08 15:54:12,0.858s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/DeleteUser""))",,,,2566-11-08 15:54:12,2566-11-08 15:54:13,0.737s,PASSED
+,,,,,,,
+Test Cases/SOAP_API_TEST1,,,,2566-11-08 15:54:13,2566-11-08 15:54:16,2.906s,FAILED
+"sendRequestAndVerify(findTestObject(""SOAP/AddInteger""))",,,,2566-11-08 15:54:13,2566-11-08 15:54:14,1.452s,PASSED
+"sendRequestAndVerify(findTestObject(""SOAP/SOAP Service/SOAPDemoSoap/DivideInteger""))",,,,2566-11-08 15:54:14,2566-11-08 15:54:16,1.196s,FAILED
+,,,,,,,
+Test Cases/APIVerification,,,,2566-11-08 15:54:16,2566-11-08 15:54:17,0.932s,PASSED
+"sendRequest(findTestObject(""API/REST/GetUserList""))",,,,2566-11-08 15:54:16,2566-11-08 15:54:16,0.189s,PASSED
+"response = sendRequestAndVerify(findTestObject(""API/REST/GetUserList""))",,,,2566-11-08 15:54:16,2566-11-08 15:54:17,0.455s,PASSED
+"verifyElementPropertyValue(response, ""data[4].first_name"", ""George"")",,,,2566-11-08 15:54:17,2566-11-08 15:54:17,0.019s,PASSED
+"verifyElementsCount(response, ""data"", 6)",,,,2566-11-08 15:54:17,2566-11-08 15:54:17,0.027s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2566-11-08 15:54:17,2566-11-08 15:54:17,0.002s,PASSED
+"verifyResponseStatusCodeInRange(response, 200, 204)",,,,2566-11-08 15:54:17,2566-11-08 15:54:17,0.011s,PASSED

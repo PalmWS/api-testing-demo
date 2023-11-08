@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="JSON-XML-TEST" time="11.915" tests="4" failures="0" errors="0">
+   <testsuite name="JSON-XML-TEST" tests="4" failures="0" errors="0" time="11.915" skipped="0" timestamp="2566-11-08 15:50:02" hostname="Wisanu - GA006556-Wisanu" id="Test Suites/JSON-XML-TEST">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Admin\\git\\api-testing-demo\\Reports\\25661108_154954\\JSON-XML-TEST\\25661108_154954"/>
+         <property name="logFiles" value="C:\\Users\\Admin\\git\\api-testing-demo\\Reports\\25661108_154954\\JSON-XML-TEST\\25661108_154954\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Wisanu - GA006556-Wisanu"/>
+         <property name="hostAddress" value="192.168.1.5"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.6.208"/>
+      </properties>
+      <testcase name="Test Cases/ReqResChaining_JSON" time="4.417" classname="Test Cases/ReqResChaining_JSON" status="PASSED">
+         <system-out><![CDATA[2566-11-08 15:50:02 - [TEST_CASE][PASSED] - Test Cases/ReqResChaining_JSON: Test Cases/ReqResChaining_JSON
+
+2566-11-08 15:50:03 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/REST/GetUserList")): Send request and verify the response successfully
+
+2566-11-08 15:50:05 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\0.har
+
+2566-11-08 15:50:05 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:05 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:05 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-08 15:50:05 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-08 15:50:05 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-08 15:50:05 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[4].first_name", "George"): Verify element property value successfully
+
+2566-11-08 15:50:06 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2566-11-08 15:50:06 - [TEST_STEP][PASSED] - FIRST_NAME = getElementPropertyValue(response, "data[4].first_name"): null
+
+2566-11-08 15:50:06 - [TEST_STEP][PASSED] - println("Global Variable First_Name is : " + FIRST_NAME): null
+
+2566-11-08 15:50:06 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:06 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:06 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-08 15:50:06 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/REST/UpdateUser", ["name":FIRST_NAME])): Send request and verify the response successfully
+
+2566-11-08 15:50:07 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\1.har
+
+2566-11-08 15:50:07 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "George"): Verify element property value successfully
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ReqResChaining_JSON_Groovy" time="1.522" classname="Test Cases/ReqResChaining_JSON_Groovy" status="PASSED">
+         <system-out><![CDATA[2566-11-08 15:50:07 - [TEST_CASE][PASSED] - Test Cases/ReqResChaining_JSON_Groovy: Test Cases/ReqResChaining_JSON_Groovy
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - resp = sendRequestAndVerify(findTestObject("API/REST/GetUserList")): Send request and verify the response successfully
+
+2566-11-08 15:50:07 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\2.har
+
+2566-11-08 15:50:07 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[4].first_name", "George"): Verify element property value successfully
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - FIRST_NAME = getElementPropertyValue(response, "data[4].first_name"): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - println("Global Variable First_Name is : " + FIRST_NAME): null
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:07 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - result = slurper.parseText(resp.getResponseBodyContent()): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - value = first_name: null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - println("value is : " + value): null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - FIRST_NAME = value: null
+
+2566-11-08 15:50:07 - [TEST_STEP][PASSED] - println("Global Var First Name is : " + FIRST_NAME): null
+
+2566-11-08 15:50:08 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/REST/UpdateUser", ["name":value])): Send request and verify the response successfully
+
+2566-11-08 15:50:08 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\3.har
+
+2566-11-08 15:50:08 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:08 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:08 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2566-11-08 15:50:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2566-11-08 15:50:08 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2566-11-08 15:50:08 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "George"): Verify element property value successfully
+
+2566-11-08 15:50:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2566-11-08 15:50:08 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:08 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:08 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ReqResChaining_XML" time="3.105" classname="Test Cases/ReqResChaining_XML" status="PASSED">
+         <system-out><![CDATA[2566-11-08 15:50:08 - [TEST_CASE][PASSED] - Test Cases/ReqResChaining_XML: Test Cases/ReqResChaining_XML
+
+2566-11-08 15:50:09 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("SOAP/SOAP Service/SOAPDemoSoap/AddInteger")): Send request and verify the response successfully
+
+2566-11-08 15:50:10 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\4.har
+
+2566-11-08 15:50:10 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:10 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:10 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:10 - [TEST_STEP][PASSED] - FIRST_NUM = getElementPropertyValue(response, "AddIntegerResponse.AddIntegerResult"): null
+
+2566-11-08 15:50:10 - [TEST_STEP][PASSED] - println("Value for Global Variable First_Num is : " + FIRST_NUM): null
+
+2566-11-08 15:50:10 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:10 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:10 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-08 15:50:10 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("SOAP/SOAP Service/SOAPDemoSoap/DivideInteger", ["num1":FIRST_NUM])): Send request and verify the response successfully
+
+2566-11-08 15:50:11 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\5.har
+
+2566-11-08 15:50:11 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:11 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:11 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:11 - [TEST_STEP][PASSED] - verifyElementText(response, "DivideIntegerResponse.DivideIntegerResult", "2"): Verify element text successfully
+
+2566-11-08 15:50:11 - [MESSAGE][PASSED] - Verify element text successfully
+
+2566-11-08 15:50:11 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:11 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:11 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ReqResChaining_XML_Groovy" time="2.578" classname="Test Cases/ReqResChaining_XML_Groovy" status="PASSED">
+         <system-out><![CDATA[2566-11-08 15:50:11 - [TEST_CASE][PASSED] - Test Cases/ReqResChaining_XML_Groovy: Test Cases/ReqResChaining_XML_Groovy
+
+2566-11-08 15:50:12 - [TEST_STEP][PASSED] - addResponse = sendRequestAndVerify(findTestObject("SOAP/SOAP Service/SOAPDemoSoap/AddInteger")): Send request and verify the response successfully
+
+2566-11-08 15:50:13 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\6.har
+
+2566-11-08 15:50:13 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - FIRST_NUM = getElementPropertyValue(response, "AddIntegerResponse.AddIntegerResult"): null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - println("Value for Global Variable First_Num is : " + FIRST_NUM): null
+
+2566-11-08 15:50:13 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:13 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:13 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - xmlBody = responseBodyContent: null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - value = XmlSlurper().parseText(xmlBody): null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - println(" value is : " + value): null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - FIRST_NUM = value: null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - println(" value of Global Var First Num is : " + FIRST_NUM): null
+
+2566-11-08 15:50:13 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("SOAP/SOAP Service/SOAPDemoSoap/DivideInteger", ["num1":FIRST_NUM])): Send request and verify the response successfully
+
+2566-11-08 15:50:14 - [MESSAGE][INFO] - HAR: C:\Users\Admin\git\api-testing-demo\Reports\25661108_154954\JSON-XML-TEST\25661108_154954\requests\main\7.har
+
+2566-11-08 15:50:14 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2566-11-08 15:50:14 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2566-11-08 15:50:14 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2566-11-08 15:50:14 - [TEST_STEP][PASSED] - verifyElementText(response, "DivideIntegerResponse.DivideIntegerResult", "2"): Verify element text successfully
+
+2566-11-08 15:50:14 - [MESSAGE][PASSED] - Verify element text successfully
+
+2566-11-08 15:50:14 - [MESSAGE][PASSED] - Verify response successfully
+
+2566-11-08 15:50:14 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2566-11-08 15:50:14 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2566-11-08 15:50:02 - [TEST_SUITE][PASSED] - JSON-XML-TEST: Test Cases/ReqResChaining_XML_Groovy]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

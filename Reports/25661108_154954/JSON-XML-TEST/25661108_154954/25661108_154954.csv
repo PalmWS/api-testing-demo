@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+JSON-XML-TEST,,,,2566-11-08 15:50:02,2566-11-08 15:50:14,11.915s,PASSED
+,,,,,,,
+Test Cases/ReqResChaining_JSON,,,,2566-11-08 15:50:02,2566-11-08 15:50:07,4.417s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/GetUserList""))",,,,2566-11-08 15:50:03,2566-11-08 15:50:06,3.172s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/UpdateUser"", [""name"":FIRST_NAME]))",,,,2566-11-08 15:50:06,2566-11-08 15:50:07,0.893s,PASSED
+,,,,,,,
+Test Cases/ReqResChaining_JSON_Groovy,,,,2566-11-08 15:50:07,2566-11-08 15:50:08,1.522s,PASSED
+"resp = sendRequestAndVerify(findTestObject(""API/REST/GetUserList""))",,,,2566-11-08 15:50:07,2566-11-08 15:50:07,0.426s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2566-11-08 15:50:07,2566-11-08 15:50:07,0.000s,PASSED
+result = slurper.parseText(resp.getResponseBodyContent()),,,,2566-11-08 15:50:07,2566-11-08 15:50:07,0.000s,PASSED
+value = first_name,,,,2566-11-08 15:50:07,2566-11-08 15:50:07,0.000s,PASSED
+"println(""value is : "" + value)",,,,2566-11-08 15:50:07,2566-11-08 15:50:07,0.000s,PASSED
+FIRST_NAME = value,,,,2566-11-08 15:50:07,2566-11-08 15:50:07,0.000s,PASSED
+"println(""Global Var First Name is : "" + FIRST_NAME)",,,,2566-11-08 15:50:07,2566-11-08 15:50:08,0.015s,PASSED
+"sendRequestAndVerify(findTestObject(""API/REST/UpdateUser"", [""name"":value]))",,,,2566-11-08 15:50:08,2566-11-08 15:50:08,0.788s,PASSED
+,,,,,,,
+Test Cases/ReqResChaining_XML,,,,2566-11-08 15:50:08,2566-11-08 15:50:11,3.105s,PASSED
+"sendRequestAndVerify(findTestObject(""SOAP/SOAP Service/SOAPDemoSoap/AddInteger""))",,,,2566-11-08 15:50:09,2566-11-08 15:50:10,1.693s,PASSED
+"sendRequestAndVerify(findTestObject(""SOAP/SOAP Service/SOAPDemoSoap/DivideInteger"", [""num1"":FIRST_NUM]))",,,,2566-11-08 15:50:10,2566-11-08 15:50:11,1.193s,PASSED
+,,,,,,,
+Test Cases/ReqResChaining_XML_Groovy,,,,2566-11-08 15:50:11,2566-11-08 15:50:14,2.578s,PASSED
+"addResponse = sendRequestAndVerify(findTestObject(""SOAP/SOAP Service/SOAPDemoSoap/AddInteger""))",,,,2566-11-08 15:50:12,2566-11-08 15:50:13,1.011s,PASSED
+xmlBody = responseBodyContent,,,,2566-11-08 15:50:13,2566-11-08 15:50:13,0.000s,PASSED
+value = XmlSlurper().parseText(xmlBody),,,,2566-11-08 15:50:13,2566-11-08 15:50:13,0.000s,PASSED
+"println("" value is : "" + value)",,,,2566-11-08 15:50:13,2566-11-08 15:50:13,0.000s,PASSED
+FIRST_NUM = value,,,,2566-11-08 15:50:13,2566-11-08 15:50:13,0.000s,PASSED
+"println("" value of Global Var First Num is : "" + FIRST_NUM)",,,,2566-11-08 15:50:13,2566-11-08 15:50:13,0.000s,PASSED
+"sendRequestAndVerify(findTestObject(""SOAP/SOAP Service/SOAPDemoSoap/DivideInteger"", [""num1"":FIRST_NUM]))",,,,2566-11-08 15:50:13,2566-11-08 15:50:14,1.150s,PASSED

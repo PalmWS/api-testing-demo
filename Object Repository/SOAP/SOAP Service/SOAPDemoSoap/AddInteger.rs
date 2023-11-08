@@ -48,5 +48,25 @@
    <soapServiceFunction>AddInteger</soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <verificationScript>import static org.assertj.core.api.Assertions.*
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webservice.verification.WSResponseManager
+
+import groovy.json.JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
+
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+GlobalVariable.FIRST_NUM = WS.getElementPropertyValue(response, 'AddIntegerResponse.AddIntegerResult')
+
+//GlobalVariable.FIRST_NUM = WS.verifyElementText(response, 'AddIntegerResponse.AddIntegerResult', contentOf)
+
+println 'Value for Global Variable First_Num is : ' + GlobalVariable.FIRST_NUM
+</verificationScript>
    <wsdlAddress>https://www.crcind.com/csp/samples/SOAP.Demo.CLS?WSDL=1</wsdlAddress>
 </WebServiceRequestEntity>
